@@ -1,0 +1,31 @@
+{
+    "name": "swag/plugin-quick-start",
+    "description": "Plugin quick start plugin",
+    "version": "v1.0.0",
+    "type": "shopware-platform-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "shopware AG"
+        }
+    ],
+    "require": {
+        "shopware/platform": "dev-master"
+    },
+    "extra": {
+        "shopware-plugin-class": "Swag\\PluginCypressTests\\PluginCypressTests",
+        "label": {
+            "de-DE": "Label für das Plugin PluginCypressTests",
+            "en-GB": "Label for the plugin PluginCypressTests"
+        },
+        "description": {
+            "de-DE": "Beschreibung für das Plugin PluginCypressTests",
+            "en-GB": "Description for the plugin PluginCypressTests"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Swag\\PluginCypressTests\\": "src/"
+        }
+    }
+}
