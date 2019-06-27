@@ -30,7 +30,9 @@ describe('PluginCypressTests: Test configuration', () => {
         cy.get('input[name="PluginCypressTests.config.example"]').type('Typed using an E2E test');
         cy.get('.sw-plugin-config__save-action').click();
 
-        cy.get('.sw-notifications__notification--0 .sw-alert__message').should('be.visible')
-            .contains('Die Konfiguration wurde erfolgreich gespeichert');
+        cy.wait('@saveData').then(() => {
+            cy.get('.sw-notifications__notification--0 .sw-alert__message').should('be.visible')
+                .contains('Die Konfiguration wurde erfolgreich gespeichert');
+        });
     });
 });
