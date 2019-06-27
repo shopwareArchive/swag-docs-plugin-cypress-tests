@@ -1,6 +1,6 @@
 {
-    "name": "swag/plugin-quick-start",
-    "description": "Plugin quick start plugin",
+    "name": "swag/plugin-cypress-testing",
+    "description": "Plugin cypress tests",
     "version": "v1.0.0",
     "type": "shopware-platform-plugin",
     "license": "MIT",

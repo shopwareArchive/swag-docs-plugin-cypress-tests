@@ -4,7 +4,7 @@ describe('PluginCypressTests: Test configuration', () => {
     beforeEach(() => {
         cy.loginViaApi()
             .then(() => {
-                cy.visit(`/admin#/sw/plugin/index/list`);
+                cy.visit('/admin#/sw/plugin/index/list');
             });
     });
 
