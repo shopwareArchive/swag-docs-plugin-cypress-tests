@@ -23,7 +23,7 @@ describe('PluginCypressTests: Test configuration', () => {
         cy.get('.sw-data-grid__row--0').should('be.visible');
         cy.get('.sw-data-grid__row--0 .sw-context-button__button').click({force: true});
         cy.get('.sw-context-menu').should('be.visible');
-        cy.get('.sw-context-menu-item:nth-of-type(1)').click();
+        cy.contains('Config').click();
         cy.get('.sw-context-menu').should('not.exist');
 
         // Edit configuration and save
