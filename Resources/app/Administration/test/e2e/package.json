@@ -1,0 +1,23 @@
+{
+  "name": "swag-docs-plugin-cypress-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "open": "node_modules/.bin/cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shopware/swag-docs-plugin-cypress-tests.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shopware/swag-docs-plugin-cypress-tests/issues"
+  },
+  "homepage": "https://github.com/shopware/swag-docs-plugin-cypress-tests#readme"
+}

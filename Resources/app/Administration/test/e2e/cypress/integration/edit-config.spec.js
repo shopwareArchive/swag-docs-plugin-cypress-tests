@@ -17,13 +17,13 @@ describe('PluginCypressTests: Test configuration', () => {
         }).as('saveData');
 
         // Open plugin configuration
-        cy.get('.sw-grid__row--0 .sw-plugin-table-entry__title')
+        cy.get('.sw-data-grid__row--0 .sw-plugin-table-entry__title')
             .contains('Label for the plugin PluginCypressTests');
 
-        cy.get('.sw-grid__row--0').should('be.visible');
-        cy.get('.sw-grid__row--0 .sw-context-button__button').click({force: true});
+        cy.get('.sw-data-grid__row--0').should('be.visible');
+        cy.get('.sw-data-grid__row--0 .sw-context-button__button').click({force: true});
         cy.get('.sw-context-menu').should('be.visible');
-        cy.get('.sw-context-menu-item:nth-of-type(2)').click();
+        cy.contains('Config').click();
         cy.get('.sw-context-menu').should('not.exist');
 
         // Edit configuration and save
@@ -32,7 +32,7 @@ describe('PluginCypressTests: Test configuration', () => {
 
         cy.wait('@saveData').then(() => {
             cy.get('.sw-notifications__notification--0 .sw-alert__message').should('be.visible')
-                .contains('Die Konfiguration wurde erfolgreich gespeichert');
+                .contains('Configuration has been saved.');
         });
     });
 });
