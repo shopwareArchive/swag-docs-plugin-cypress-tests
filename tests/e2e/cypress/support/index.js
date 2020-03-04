@@ -13,8 +13,8 @@
 // https://on.cypress.io/configuration
 // ***********************************************************
 
+// Require test suite commands
+require('@shopware-ag/e2e-testsuite-platform/cypress/support');
+
 // Import commands.js using ES2015 syntax:
 import './commands'
-
-// Alternatively you can use CommonJS syntax:
-// require('./commands')
