@@ -1,5 +1,4 @@
 // / <reference types="Cypress" />
-
 describe('PluginCypressTests: Test configuration', () => {
     beforeEach(() => {
         cy.loginViaApi()
@@ -12,7 +11,7 @@ describe('PluginCypressTests: Test configuration', () => {
         // Request we want to wait for later
         cy.server();
         cy.route({
-            url: '/api/v1/_action/system-config/batch',
+            url: '/api/v2/_action/system-config/batch',
             method: 'post'
         }).as('saveData');
 
